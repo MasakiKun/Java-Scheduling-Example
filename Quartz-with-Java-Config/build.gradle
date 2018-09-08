@@ -1,0 +1,22 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "idea"
+
+group "kr.ayukawa"
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+[compileJava, compileTestJava]*.options*.encoding = "UTF-8"
+
+def versions = [
+	"quartz": "2.3.0"
+]
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.quartz-scheduler', name: 'quartz', version: "${versions.quartz}"
+}
