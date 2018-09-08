@@ -1,4 +1,4 @@
-package kr.ayukawa.javatimer;
+package kr.ayukawa.jobs;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
