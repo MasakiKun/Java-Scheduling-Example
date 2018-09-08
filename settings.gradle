@@ -3,3 +3,4 @@ rootProject.name = 'Java-Scheduling-Example'
 include "Java-Timer"
 include "Java-Scheduled-Executor-Service"
 include "Quartz-with-Java-Config"
+include "Quartz-with-Config-File"
