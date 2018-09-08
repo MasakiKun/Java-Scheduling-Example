@@ -1,1 +1,3 @@
 rootProject.name = 'Java-Scheduling-Example'
+
+include "Java-Timer"
