@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.TimerTask;
 
 /**
- * 1초마다 현재 시각을 표시한다
+ * 현재 시각을 표시한다
  */
 public class JobTimer extends TimerTask {
 	@Override
