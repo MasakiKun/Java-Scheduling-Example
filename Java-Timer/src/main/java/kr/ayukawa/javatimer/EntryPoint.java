@@ -9,6 +9,9 @@ public class EntryPoint {
 		System.out.println("2초 후 시각 표시 시작");
 
 		Timer timer = new Timer();
+		// 작업을 스케줄링하기 위해 schedule() 메서드를 사용한다
+		// schedule() 메서드는 작업이 항상 정확한 시간에 시작되는 것을 보장하지 못한다
+		// 항상 정확한 시간에 시작되어야 할 때는 schedule() 메서드 대신 scheduleAtFixedRate() 메서드를 사용한다
 		timer.schedule(
 				// 실행할 작업의 인스턴스
 				new JobTimer(),
