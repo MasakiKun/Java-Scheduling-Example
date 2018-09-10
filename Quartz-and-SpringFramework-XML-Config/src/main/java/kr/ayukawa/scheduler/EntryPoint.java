@@ -5,7 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.time.LocalDateTime;
 
-// ref. https://www.concretepage.com/spring-4/spring-4-quartz-2-scheduler-integration-annotation-example-using-javaconfig
 public class EntryPoint {
 	public static void main(String[] args) {
 		System.out.println("현재시각: " + LocalDateTime.now().toString());
