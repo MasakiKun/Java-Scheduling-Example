@@ -28,9 +28,23 @@ java.util.Timer 클래스를 이용한 스케줄링 예제
 
 ### Quartz-with-Config-File
 
-Quartz를 이용했다는 점은 동일하나, 수행할 작업만 코드로 작성하고 Quartz 환경설정 자체는 properties 파일과 XML　파일을 이용한 환경설정으로 되어있는 예제.
+Quartz를 이용했다는 점은 동일하나, 수행할 작업만 코드로 작성하고 Quartz 환경설정 자체는 properties 파일과 XML 파일을 이용한 환경설정으로 되어있는 예제.
 
 Quartz의 XML 설정에는 SimpleTrigger의 startAt() 에 해당하는 설정이 없어서, 최초 실행 후 3초 대기 없이 바로 현재 시각이 표시된다.
+
+### Quartz-and-SpringFramework-XML-Config
+
+Quartz의 스케줄러, Job, Trigger를 스프링 컨테이너가 관리하도록 한 예제. 이 예제에서는 스프링의 메타 데이터를 네임스페이스 기반의 XML로 작성했다. 
+
+참고로 Quartz와 Spring Framework는 각각 관리하는 객체들의 생명주기가 달라서, 일반적인 방법으로는 스프링 컨테이너가 관리하는 빈을 Quartz의 Job에 주입할 수 없다고 한다.
+
+Quartz의 Job에 스프링 컨테이너가 관리하는 빈을 주입하기 위해서는 JobDataMap 이라는 프로퍼티에 직접 빈을 주입해주어야 한다. 
+
+이 예제에서는 이 부분은 생략했다.
+
+### Quartz-and-SpringFramework-Java-Config
+
+Quartz + Spring Framework 예제를 Java Config 형태로 구현한 예제. 동작은 동일하다.
 
 ## References
 
