@@ -59,4 +59,4 @@ Quartz + Spring Framework 예제를 Java Config 형태로 구현한 예제. 동�
   * [자바 스케쥴링 & 타이머 방법들](http://hamait.tistory.com/211)
   * [Example to run multiple jobs in Quartz](https://www.mkyong.com/java/example-to-run-multiple-jobs-in-quartz/)
   * [Configure Quartz Scheduler Jobs using XML File](https://www.mkyong.com/java/example-to-run-multiple-jobs-in-quartz/)
-  
+  * [ Spring 4 + Quartz 2 Scheduler Integration Annotation Example using JavaConfig](https://www.concretepage.com/spring-4/spring-4-quartz-2-scheduler-integration-annotation-example-using-javaconfig)
