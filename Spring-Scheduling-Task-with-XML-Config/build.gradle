@@ -23,6 +23,4 @@ repositories {
 dependencies {
 	compile group: 'org.springframework', name: 'spring-core', version: "${versions.spring.core}"
 	compile group: 'org.springframework', name: 'spring-context-support', version: "${versions.spring.core}"
-//	compile group: 'org.springframework', name: 'spring-support', version: "${versions.spring.support}"
-//	compile group: 'org.springframework', name: 'spring-tx', version: "${versions.spring.core}"
 }
