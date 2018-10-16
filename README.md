@@ -50,6 +50,10 @@ Quartz + Spring Framework 예제를 Java Config 형태로 구현한 예제. 동�
 
 Spring에 내장된 Task과 Scheduling을 XML Config 형태로 구현한 예제. 동작은 동일하다.
 
+### Spring-Scheduling-Task-with-Annotation
+
+Spring에 내장된 Task와 Scheduling을 어노테이션을 이용해서 구현한 예제. 동작은 동일하다.
+
 ## References
 
   * 자바 기반 스케줄링 프로그래밍
@@ -64,3 +68,9 @@ Spring에 내장된 Task과 Scheduling을 XML Config 형태로 구현한 예제.
   * [Example to run multiple jobs in Quartz](https://www.mkyong.com/java/example-to-run-multiple-jobs-in-quartz/)
   * [Configure Quartz Scheduler Jobs using XML File](https://www.mkyong.com/java/example-to-run-multiple-jobs-in-quartz/)
   * [ Spring 4 + Quartz 2 Scheduler Integration Annotation Example using JavaConfig](https://www.concretepage.com/spring-4/spring-4-quartz-2-scheduler-integration-annotation-example-using-javaconfig)
+  * [Spring Scheduler(스프링 스케쥴러) 설정방법 및 사용방법](https://blog.naver.com/cyon24/203674742)
+  * [생활코딩 - 스프링 스케줄러](https://opentutorials.org/module/2068/12058)
+  * [Spring Scheduling 작동 주기 동적으로 설정하기](http://tech.javacafe.io/2018/05/30/dynamic_scheduling/)
+  * [Spring @Scheduled 어노테이션](http://logtree.tistory.com/26)
+  * [[Spring 레퍼런스] 26장 태스크(Task) 실행과 스케줄링](https://blog.outsider.ne.kr/1066)
+  
