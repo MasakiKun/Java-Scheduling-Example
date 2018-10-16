@@ -54,6 +54,18 @@ Spring에 내장된 Task과 Scheduling을 XML Config 형태로 구현한 예제.
 
 Spring에 내장된 Task와 Scheduling을 어노테이션을 이용해서 구현한 예제. 동작은 동일하다.
 
+### Spring-Scheduling-Task-With-Java-Config
+
+Spring에 내장된 Task와 Scheduling을 Java Config 형태로 구현한 예제. 동작은 동일하다.
+
+### Spring-Scheduling-Task-With-Java-Config-And-SchedulingConfigurer
+
+Spring에 내장된 Task와 Scheduling을 Java Config로 구현하되, 스케줄링 설정에 SchedulingConfigurer 인터페이스를 구현해서 만든 예제.
+
+동작은 동일하다.
+
+사실 어노테이션을 이용하는게 가장 간단하기 때문에, 이런 복잡한 방법이 왜 필요한지 모르겠다 (...)
+
 ## References
 
   * 자바 기반 스케줄링 프로그래밍
@@ -73,4 +85,7 @@ Spring에 내장된 Task와 Scheduling을 어노테이션을 이용해서 구현
   * [Spring Scheduling 작동 주기 동적으로 설정하기](http://tech.javacafe.io/2018/05/30/dynamic_scheduling/)
   * [Spring @Scheduled 어노테이션](http://logtree.tistory.com/26)
   * [[Spring 레퍼런스] 26장 태스크(Task) 실행과 스케줄링](https://blog.outsider.ne.kr/1066)
+  * [Spring Configuring TaskScheduler Examples](http://www.javarticles.com/2016/05/spring-configuring-taskscheduler-examples.html)
+  * [Spring 3 이상에서 Java Config로 Scheduling 작업 구현하기](http://debop.tumblr.com/post/59200537960/spring-3-%EC%9D%B4%EC%83%81%EC%97%90%EC%84%9C-java-config%EB%A1%9C-scheduling-%EC%9E%91%EC%97%85-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
+  * [Spring Scheduler Configuration](http://clean-brain-textcube.blogspot.com/2013/01/spring-scheduler-configuration.html)
   
