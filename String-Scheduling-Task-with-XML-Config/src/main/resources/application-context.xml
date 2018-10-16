@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans
+		xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:task="http://www.springframework.org/schema/task"
+		xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		">
+
+	<bean id="timerJob" class="kr.ayukawa.jobs.TimerJob" />
+
+	<task:scheduler id="scheduler" pool-size="2" />
+	<task:scheduled-tasks>
+		<task:scheduled ref="timerJob" method="execute" fixed-rate="1000" initial-delay="3000" />
+	</task:scheduled-tasks>
+	<!--
+		<task:scheduled> 에는 다음 속성을 사용할 수 있다.
+
+		* fixed-rate
+		   * 실행 주기를 ms 단위로 지정한다. 지정한 task를 fixed-rate의 값에 설정한 주기마다 실행한다
+
+		* fixed-delay
+		   * 실행 완료 후의 딜레이를 ms 단위로 지정한다. 지정한 task가 실행된 후, fixed-delay 만큼 대기 후 재차 실행한다
+
+		* initial-delay
+		   * 최초 실행시의 딜레이를 ms 단위로 지정한다
+
+		* cron
+		   * 실행 주기를 cron 표현식에서 표현한 주기마다 실행한다
+
+		* trigger
+		   * 실행 주기를 은닉한 Trigger 클래스 빈을 지정한다. CronTrigger의 빈이나 PeriodicTrigger의 빈을 지정할 수 있다
+	-->
+</beans>

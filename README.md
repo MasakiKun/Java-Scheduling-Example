@@ -46,6 +46,10 @@ Quartz의 Job에 스프링 컨테이너가 관리하는 빈을 주입하기 위�
 
 Quartz + Spring Framework 예제를 Java Config 형태로 구현한 예제. 동작은 동일하다.
 
+### Spring-Scheduling-Task-with-XML-Config
+
+Spring에 내장된 Task과 Scheduling을 XML Config 형태로 구현한 예제. 동작은 동일하다.
+
 ## References
 
   * 자바 기반 스케줄링 프로그래밍
